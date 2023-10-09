@@ -5,6 +5,7 @@ class Article:
         self.all = []
 
     def get_all(self):
+        self.all.append(self.name)
         pass
 
     def add_article(self):

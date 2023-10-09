@@ -5,6 +5,7 @@ class Magazine:
         self.all = []
     
     def get_all(self):
+        self.all.append(self.name)
         pass
 
     def topic_areas(self):
@@ -28,7 +29,7 @@ Magazine.contributors()
 Magazine.find_by_name
 # - Given a string of magazine's name, this method returns the first magazine object that matches
 
-Magazine.article_titles():
+Magazine.article_titles()
 # - Returns an list strings of the titles of all articles written for that magazine
 
 
