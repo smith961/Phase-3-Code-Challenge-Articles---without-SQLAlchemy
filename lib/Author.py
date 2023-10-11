@@ -1,4 +1,5 @@
 from Article import *
+from Magazine import *
 
 
 class Author:
@@ -11,6 +12,15 @@ class Author:
         return self._name
     
     def get_all_aritcles(self):
+        pass
+    
+    def get_all_magazines(self):
+        pass
+
+    def add_article(self, magazine, title):
+        pass
+
+    def topic_areas(self):
         pass
     
     def __repr__(self):
@@ -26,12 +36,6 @@ author2 = Author("Empress Rukky")
 
 
 # print(author1.get_name())
-
-
-
-
-
-
 
 # print(author2.name)
 

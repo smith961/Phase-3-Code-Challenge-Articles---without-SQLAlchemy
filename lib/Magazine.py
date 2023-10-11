@@ -9,34 +9,27 @@ class Magazine:
     def get_name(self): #Returns the name of this magazine
          return self.name
     
-
     def get_category(self): # - Returns the category of this magazine
         return self.category
     
-    # def get_all(cls): #  - Returns a list of all Magazine instances
-    #     for instance in cls.all:
-    #         print (instance)
-    #     return instance
-    #     pass
-
-    def topic_areas(self):
+    def contributors(self):
         pass
-
+    
     @classmethod
     def find_by_name(cls):
         pass
-
+    
     @classmethod
     def article_titles(cls): #  - Returns a list of Author instances who have written for this magazine
-        
         pass
-
+    
     def contributing_authors(self):  #Returns a list of authors who have written more than 2 articles for the magazine
         #for loop
         pass
+    
     def __repr__(self):
         return f"Magazine('{self.name}' , '{self.category}')"
-        pass
+        
 
 magazine1 = Magazine("VanityFair" ,"Fashion")
 magazine2 = Magazine("Time" ,"New York City")

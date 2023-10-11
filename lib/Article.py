@@ -20,10 +20,10 @@ class Article:
     
     def __repr__(self):
         return f"{self.title}"
-        pass
+    
         
     
-    pass
+    
 
 article1 = Article(author1 , magazine1 ,"War Comes to Israel")
 article2 = Article(author2 , magazine2, "The Trump Boys Can't Recall a Thing")
