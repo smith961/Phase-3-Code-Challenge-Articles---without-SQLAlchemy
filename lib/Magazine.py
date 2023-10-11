@@ -1,13 +1,23 @@
 class Magazine:
-    def __init__(self, name, category):
+    all = []
+    def __init__(self, name="", category=""):
         self.name = name
         self.category = category
-        self.all = []
+        self.articles = []
+        Magazine.all.append(self)
     
-    def get_all(self):
-        self.all.append(self.name) #Returns a list of all Magazine instances
-        return self.all
-        pass
+    def get_name(self): #Returns the name of this magazine
+         return self.name
+    
+
+    def get_category(self): # - Returns the category of this magazine
+        return self.category
+    
+    # def get_all(cls): #  - Returns a list of all Magazine instances
+    #     for instance in cls.all:
+    #         print (instance)
+    #     return instance
+    #     pass
 
     def topic_areas(self):
         pass
@@ -17,20 +27,31 @@ class Magazine:
         pass
 
     @classmethod
-    def article_titles(cls):
+    def article_titles(cls): #  - Returns a list of Author instances who have written for this magazine
+        
         pass
 
-    def contributing_authors(self): #  - Returns a list of Author instances who have written for this magazine
+    def contributing_authors(self):  #Returns a list of authors who have written more than 2 articles for the magazine
+        #for loop
+        pass
+    def __repr__(self):
+        return f"Magazine('{self.name}' , '{self.category}')"
         pass
 
 magazine1 = Magazine("VanityFair" ,"Fashion")
 magazine2 = Magazine("Time" ,"New York City")
-magazine1.name = "Vgs"
-magazine= [magazine1,magazine2]
-print(magazine2.get_all())
+magazine3 = Magazine("Forbes" , "Business")
+
+print(magazine1.get_name()) #Returns the name of this magazine
+
+print(magazine1.get_category()) # - Returns the category of this magazine
+
+print(Magazine.all) # Returns a list of all Magazine instances
 
 
-# print(magazine1.name)
+
+
+
 
 # Magazine.contributors()
 # #Returns a list of Author instances who have written for this magazine
@@ -44,3 +65,4 @@ print(magazine2.get_all())
 
 # Magazine.contributing_authors()
 # # - Returns a list of authors who have written more than 2 articles for the magazine
+

@@ -1,7 +1,20 @@
+from Article import *
+
+
 class Author:
-    def __init__(self, name):
-        self.name = name
-        print (self.name)
+    all_articles = []
+    def __init__(self, name=""):
+        self._name = name
+        print (self._name)
+    
+    def get_name(self):
+        return self._name
+    
+    def get_all_aritcles(self):
+        pass
+    
+    def __repr__(self):
+        return f"Author : '{self._name}'"
     
     
         
@@ -10,6 +23,11 @@ class Author:
 
 author1 = Author("Albert Smith")
 author2 = Author("Empress Rukky")
+
+
+# print(author1.get_name())
+
+
 
 
 
